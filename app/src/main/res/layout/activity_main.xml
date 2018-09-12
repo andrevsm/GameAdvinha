@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:layout_margin="16dp"
+    app:cardBackgroundColor="#ffffff"
+    app:cardElevation="20dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="194dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="Escolha um número entre 0 e 10"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/cabecalho_texto"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="82dp"
+            tools:layout_editor_absoluteY="123dp" />
+
+        <Button
+            android:id="@+id/btnJogar"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="127dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@color/colorPrimary"
+            android:onClick="btnJogar"
+            android:text="@string/botao_jogar"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="147dp"
+            tools:layout_editor_absoluteY="254dp" />
+
+        <TextView
+            android:id="@+id/resultadoId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="161dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="@string/texto_numero"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/cabecalho_texto"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnZerar"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:text="@string/botao_limpar"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="36dp"
+            app:srcCompat="@drawable/dices" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
